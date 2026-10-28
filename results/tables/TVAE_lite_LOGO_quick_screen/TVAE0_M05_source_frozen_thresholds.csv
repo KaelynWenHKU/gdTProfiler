@@ -1,0 +1,3 @@
+model,threshold,selection_dataset
+TVAE(0),0.9923211932182312,Song donor-OOF strict_gold
+M05,0.9529421705908118,Song donor-OOF strict_gold

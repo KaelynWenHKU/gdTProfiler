@@ -1,0 +1,22 @@
+remote_root: /data/users/kaelynwen
+project_root: /data/users/kaelynwen/gdT_project/gdt_lr_12model
+
+song_root_candidates:
+  - /data/users/kaelynwen/gdTcell_Yuanhua/hd_rna_abtcr_gdtcr_SONG
+  - /data/users/kaelynwen/gdT_yuanhua/hd_rna_abtcr_gdtcr_SONG
+  - /data/users/kaelynwen/gdT_project/gdTcell_Yuanhua/hd_rna_abtcr_gdtcr_SONG
+  - /data/users/kaelynwen/hd
+
+dataset2_root_candidates:
+  - /data/users/kaelynwen/Atlas_dataset 2
+  - /data/users/kaelynwen/gdT_project/Atlas_dataset 2
+
+dataset2_files:
+  gex: CountAdded_PIP_T_object_for_cellxgene.h5ad
+  ab_ir: adata_TILC_TCR_onlyseq.h5ad
+  gd_ir: adata_TILC_TCRgd_onlyseq.h5ad
+
+organs15_root_candidates:
+  - /data/users/kaelynwen/gdT_yuanhua/15organs
+  - /data/users/kaelynwen/gdTcell_Yuanhua/15organs
+  - /data/users/kaelynwen/gdT_project/gdTcell_Yuanhua/15organs

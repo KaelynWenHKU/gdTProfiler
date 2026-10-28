@@ -1,0 +1,12 @@
+{
+  "analysis": "TVAE_lite_LOGO_quick_screen",
+  "model": "TVAE(0)",
+  "run_signature": "6286c09db48927714e95057715ca3457def9bd5d332b1b2d522badb252243dd1",
+  "genes": 2009,
+  "m05_bundle_sha256": "74830cdd2e93a2728cc9cc42d96159eed1730ea347d1b4ed30071aefa3d41ac6",
+  "final_model_path": "/data/users/kaelynwen/gdT_project/gdt_lr_12model/checkpoints/TVAE_lite_LOGO_quick_screen/TVAE(0)__final_all_Song.joblib",
+  "final_model_sha256": "2961ae3450e42fa0521e5cab81e7786b187a648462fad6dd876b952b94411ce2",
+  "spl_opened_before_freeze": false,
+  "target_data_used_for_training_or_selection": false,
+  "frozen_utc": "2026-08-26T03:18:59.950519+00:00"
+}

@@ -1,0 +1,13 @@
+model_id,label_regime,hvg_regime,gene_regime,lambda_TRD,confirmatory_eligible
+M01,L1_paired_only,H1_song_inductive,G1_TCR_free,0.0,True
+M02,L2_paired_plus_TRD_equal,H1_song_inductive,G1_TCR_free,1.0,True
+M03,L3_paired_plus_TRD_weighted,H1_song_inductive,G1_TCR_free,0.5,True
+M04,L1_paired_only,H1_song_inductive,G2_TCR_inclusive,0.0,True
+M05,L2_paired_plus_TRD_equal,H1_song_inductive,G2_TCR_inclusive,1.0,True
+M06,L3_paired_plus_TRD_weighted,H1_song_inductive,G2_TCR_inclusive,0.5,True
+M07,L1_paired_only,H2_song_spl_target_informed,G1_TCR_free,0.0,False
+M08,L2_paired_plus_TRD_equal,H2_song_spl_target_informed,G1_TCR_free,1.0,False
+M09,L3_paired_plus_TRD_weighted,H2_song_spl_target_informed,G1_TCR_free,0.5,False
+M10,L1_paired_only,H2_song_spl_target_informed,G2_TCR_inclusive,0.0,False
+M11,L2_paired_plus_TRD_equal,H2_song_spl_target_informed,G2_TCR_inclusive,1.0,False
+M12,L3_paired_plus_TRD_weighted,H2_song_spl_target_informed,G2_TCR_inclusive,0.5,False

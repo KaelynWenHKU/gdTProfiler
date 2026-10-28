@@ -1,0 +1,3 @@
+endpoint,donor_macro_average_precision,donor_macro_roc_auc,donor_macro_brier
+TRD_only_sensitivity,0.8915083948918603,0.9593019581465763,0.15521835731555586
+paired_TRG_TRD_primary,0.9065649785006864,0.9621092720640984,0.15476082421775228

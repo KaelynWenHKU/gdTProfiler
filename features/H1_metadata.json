@@ -1,0 +1,10 @@
+{
+  "method": "cell_ranger",
+  "n_top": 2000,
+  "seed": 20260806,
+  "fallback_errors": {
+    "seurat_v3": "ModuleNotFoundError(\"No module named 'skmisc'\")"
+  },
+  "eligible_cells": 20254,
+  "target_expression_used": false
+}

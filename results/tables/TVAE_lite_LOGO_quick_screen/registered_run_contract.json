@@ -1,0 +1,28 @@
+{
+  "analysis": "TVAE_lite_LOGO_quick_screen",
+  "seed": 20260806,
+  "feature_arm": "G2_TCR_inclusive",
+  "model": "TVAE(0)",
+  "label_regime": "L2_paired_plus_TRD_equal",
+  "lambda_TRD": 1.0,
+  "loss": "common summed Gaussian + 0.1 summed KL + input_dim weighted BCE",
+  "epochs": 500,
+  "representation_population": "L2-labelled fit-donor cells only",
+  "optimizer": "Professor Yuanhua original incomplete differential Adam",
+  "optimizer_groups": "encoder 1e-4; decoder 1e-4; predictor 1e-2 with weight_decay 10",
+  "expected_logo_fits": 4,
+  "expected_total_tvae_fits": 5,
+  "logo_unit_seeds": {
+    "hd1": 1180388846,
+    "hd2": 1566875481,
+    "hd3": 744320715,
+    "hd4": 914487917
+  },
+  "external_design": "final Song-only fit frozen before SPL is opened",
+  "comparison_model": "M05",
+  "target_expression_used_for_training_or_selection": false,
+  "target_labels_used_for_training_or_selection": false,
+  "run_signature": "6286c09db48927714e95057715ca3457def9bd5d332b1b2d522badb252243dd1",
+  "configuration_signature": "005c6c0a88898039101935477ef4217fe182469b089f72f1076317f36024b585",
+  "panel_gene_signature": "5e0d39a28a8ad4f92f3e20a05bb6a63b2c49b010db25654ab2bea8a61f0d8722"
+}

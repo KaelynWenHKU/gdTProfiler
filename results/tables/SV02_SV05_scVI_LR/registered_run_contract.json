@@ -1,0 +1,50 @@
+{
+  "seed": 20260806,
+  "threads": 8,
+  "label_regime": "L2_paired_plus_TRD_equal",
+  "lambda_TRD": 1.0,
+  "spl_gold_donors": [
+    "A29",
+    "A31",
+    "A35",
+    "A36",
+    "A37"
+  ],
+  "scvi_grid": [
+    {
+      "config_id": "Z10_L1_H128",
+      "n_latent": 10,
+      "n_layers": 1,
+      "n_hidden": 128
+    },
+    {
+      "config_id": "Z20_L1_H128",
+      "n_latent": 20,
+      "n_layers": 1,
+      "n_hidden": 128
+    },
+    {
+      "config_id": "Z20_L2_H128",
+      "n_latent": 20,
+      "n_layers": 2,
+      "n_hidden": 128
+    }
+  ],
+  "C_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "max_epochs": 200,
+  "early_stopping_patience": 20,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "accelerator": "gpu",
+  "target_expression_used_for_training": false,
+  "target_labels_used_for_training_or_selection": false,
+  "scarches_or_query_adaptation_used": false,
+  "hyperparameters_selected_on": "SV02 nested Song donor CV only",
+  "SV05_hyperparameters": "frozen from matched SV02 outer fold"
+}

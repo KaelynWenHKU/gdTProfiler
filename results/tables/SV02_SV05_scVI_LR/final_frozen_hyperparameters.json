@@ -1,0 +1,12 @@
+{
+  "config_id": "Z20_L2_H128",
+  "n_latent": 20,
+  "n_layers": 2,
+  "n_hidden": 128,
+  "C": 0.01,
+  "selected_on": "SV02 nested Song donor CV",
+  "applied_unchanged_to": [
+    "SV02",
+    "SV05"
+  ]
+}

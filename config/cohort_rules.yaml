@@ -1,0 +1,21 @@
+seed: 20260806
+donors_song: [hd1, hd2, hd3, hd4]
+primary_gold: gold_B
+sensitivity_gold: gold_A
+require_full_length_primary: false
+require_valid_vj: true
+require_cdr3_aa: true
+require_cdr3_nt: true
+min_reads: 1
+min_umis: 1
+min_genes: 200
+max_pct_counts_mt: 20.0
+require_detected_Tlineage_marker: true
+spl_gd_assay_complete_donors: [A29, A31, A35, A36, A37]
+excluded_from_gold:
+  - none
+  - orphan_TRG
+  - orphan_TRD_external
+  - mixed_ab_gd
+  - annotation_only_gdT
+  - probable_doublet

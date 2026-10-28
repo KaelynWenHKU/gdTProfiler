@@ -1,0 +1,7 @@
+dataset,candidate_group,threshold_lower_inclusive,threshold_upper_exclusive,n_records,n_candidates,gate_T_eligible_candidates,gate_NK_call_candidates,gate_abstain_candidates,gd_support_denominator,gd_support_selected,gd_support_retention,ab_support_denominator,ab_support_selected
+15-organ,Main,0.5,,80951,2306,1281,957,68,0,0,,7784,37
+15-organ,Supplementary,0.2,0.5,80951,501,281,181,39,0,0,,7784,35
+PANGEA,Main,0.5,,93531,10669,2467,7982,220,228,210,0.9210526315789473,1374,8
+PANGEA,Supplementary,0.2,0.5,93531,1978,475,1440,63,228,11,0.04824561403508772,1374,4
+SPL,Main,0.5,,5046,315,265,16,34,378,296,0.783068783068783,4668,19
+SPL,Supplementary,0.2,0.5,5046,43,32,3,8,378,27,0.07142857142857142,4668,16

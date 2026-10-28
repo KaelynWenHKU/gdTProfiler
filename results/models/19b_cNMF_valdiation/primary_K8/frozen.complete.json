@@ -1,0 +1,11 @@
+{
+  "outputs": {
+    "primary_K8_HVG_TPM_spectra.tsv": "046c3f374882570d9a08f0cbdd69db36b843310e686bf75bcb0b968526cd2b4c",
+    "primary_K8_ranked_genes.csv": "5e62beb7e279586676aa323b684a2adbc224ae7d818e4e6fc5bc9bfe4cdd4589",
+    "primary_K8_scoring_spec.json": "a3822e40153d528f0170fee79c639a98e17334b8cd8c576e00266c14dad875cf",
+    "primary_K8_to_K10_reference_mapping.csv": "2573d017c820278b3dda594f59ba342293deff6dfdea70ceb9cd1da85fd1cb03",
+    "primary_K8_training_sd.csv": "250ee2e02d28e2c0f69276afce3aa674efdc324dd93cfaef2ee60d16c289adf8"
+  },
+  "signature": "155b626d6ae3778ce76e35f090b5985d690c236b80c940f73622c403e7f6cf2f",
+  "timestamp": "2026-09-18T09:25:45.351502+00:00"
+}

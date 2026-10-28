@@ -1,0 +1,16 @@
+dataset,donor,subtype,n
+SPL,A29,Vd1,13
+SPL,A29,Vd2,10
+SPL,A31,Vd1,79
+SPL,A35,Vd1,32
+SPL,A35,Vd2,3
+SPL,A36,Vd1,160
+SPL,A36,Vd2,59
+SPL,A37,Vd1,4
+SPL,A37,Vd2,2
+Song,hd1,Vd2,10
+Song,hd2,Vd1,3
+Song,hd2,Vd2,62
+Song,hd3,Vd2,10
+Song,hd4,Vd1,1
+Song,hd4,Vd2,96

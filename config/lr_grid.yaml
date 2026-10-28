@@ -1,0 +1,13 @@
+seed: 20260806
+threads: 8
+hvg_k_candidates: [500, 1000, 2000, 3000]
+primary_hvg_k: 2000
+pca_n_components: 50
+pca_solver: arpack
+C_grid: [0.001, 0.01, 0.1, 1.0, 10.0]
+primary_lambda_TRD: 0.5
+lambda_TRD_sensitivity: [0.25, 1.0]
+threshold_rule: max_f1_from_song_oof
+bootstrap_replicates: 2000
+permutation_replicates: 1000
+clone_dedup_replicates: 100

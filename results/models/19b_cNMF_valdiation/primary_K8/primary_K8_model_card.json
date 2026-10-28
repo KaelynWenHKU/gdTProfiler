@@ -1,0 +1,152 @@
+{
+  "analysis": "19b_cNMF_valdiation",
+  "artifacts": {
+    "scoring_spec": "/data/users/kaelynwen/gdT_project/gdt_lr_12model/results/models/19b_cNMF_valdiation/primary_K8/primary_K8_scoring_spec.json",
+    "scoring_spec_sha256": "a3822e40153d528f0170fee79c639a98e17334b8cd8c576e00266c14dad875cf",
+    "spectra": "/data/users/kaelynwen/gdT_project/gdt_lr_12model/results/models/19b_cNMF_valdiation/primary_K8/primary_K8_HVG_TPM_spectra.tsv",
+    "spectra_sha256": "046c3f374882570d9a08f0cbdd69db36b843310e686bf75bcb0b968526cd2b4c",
+    "training_sd": "/data/users/kaelynwen/gdT_project/gdt_lr_12model/results/models/19b_cNMF_valdiation/primary_K8/primary_K8_training_sd.csv",
+    "training_sd_sha256": "250ee2e02d28e2c0f69276afce3aa674efdc324dd93cfaef2ee60d16c289adf8"
+  },
+  "external_program_support_after_q95_gate": {
+    "P1": {
+      "K8_component": "1",
+      "fraction_donor_condition_median_gt_0": 0.7976190476190477,
+      "fraction_usage_gt_0_10": 0.27956046040231863,
+      "median_usage": 0.03511884691011121
+    },
+    "P10": {
+      "K8_component": "8",
+      "fraction_donor_condition_median_gt_0": 0.0,
+      "fraction_usage_gt_0_10": 0.00020151491803084364,
+      "median_usage": 0.0
+    },
+    "P2": {
+      "K8_component": "2",
+      "fraction_donor_condition_median_gt_0": 1.0,
+      "fraction_usage_gt_0_10": 0.9843411054871327,
+      "median_usage": 0.3382179599326381
+    },
+    "P3": {
+      "K8_component": "3",
+      "fraction_donor_condition_median_gt_0": 1.0,
+      "fraction_usage_gt_0_10": 0.4044760019440263,
+      "median_usage": 0.08070854898549126
+    },
+    "P4": {
+      "K8_component": "4",
+      "fraction_donor_condition_median_gt_0": 1.0,
+      "fraction_usage_gt_0_10": 0.7266746482379298,
+      "median_usage": 0.14985819874282374
+    },
+    "P5": {
+      "K8_component": "5",
+      "fraction_donor_condition_median_gt_0": 0.9166666666666666,
+      "fraction_usage_gt_0_10": 0.5132584962245588,
+      "median_usage": 0.10302628545768613
+    },
+    "P7": {
+      "K8_component": "6",
+      "fraction_donor_condition_median_gt_0": 1.0,
+      "fraction_usage_gt_0_10": 0.17742795841680398,
+      "median_usage": 0.06003357841272934
+    },
+    "P9": {
+      "K8_component": "7",
+      "fraction_donor_condition_median_gt_0": 1.0,
+      "fraction_usage_gt_0_10": 0.8335605315252309,
+      "median_usage": 0.16670250379317436
+    }
+  },
+  "intended_use": "continuous gamma-delta T-cell state-program usage scoring from raw UMI counts",
+  "limitations": [
+    "GSE294268 contains AIM-selected stimulated cells and is not a population-prevalence cohort.",
+    "A substantial external reconstruction-error tail exceeds the Gray held-out reference.",
+    "Pooled allergic-versus-NonA effects are confounded by Experiment.",
+    "Rank-signature comparisons are baselines, not orthogonal functional validation.",
+    "Low external usage for a component is absence of support, not proof of biological absence.",
+    "PANGEA was inspected in notebooks 16-18 and is not an untouched final cohort.",
+    "PANGEA gamma-delta labels are expression-derived silver annotations, not receptor truth.",
+    "PANGEA exposes Series and Sample but no verified donor identifier; inference uses Series.",
+    "The PANGEA object contains no orthogonal protein or functional endpoint for this scorer.",
+    "Gray adult scRNA and Data S12 functional donors do not overlap; validation aligns 10 tissue x Vd contexts and cannot estimate paired donor-level correspondence.",
+    "P2-GzmB concordance is also recovered by the train-only rank-signature baseline; incremental cNMF value is not established unless the bootstrap delta excludes zero.",
+    "Data S12 provides Areg, GzmB and IFNg after PMA-ionomycin but no killing, CD107a, TNF or protein readout for every cNMF program.",
+    "GSE268991 has seven paired colorectal donors; cells are nested subsamples and donor is the inference unit.",
+    "GSE268991 supplies same-cell surface protein and independent TCR evidence but no GZMB, PRF1, CD107a, TNF, killing or degranulation endpoint.",
+    "The untouched GSE268991 evaluation is one-shot: failed hypotheses or transportability cannot trigger threshold or model tuning.",
+    "The locked GSE268991 all-cell population has a large reconstruction-error tail; high acceptance in TCR-confirmed gamma-delta cells is a post-hoc intended-population diagnostic and must be labelled as such."
+  ],
+  "model": "full-Gray primary K=8 fixed basis",
+  "not_intended_for": [
+    "gamma-delta lineage classification",
+    "Vd1/Vd2 subtype prediction",
+    "mutually exclusive cell-state labels",
+    "clinical diagnosis",
+    "population-prevalence inference from AIM-selected GSE294268 cells"
+  ],
+  "program_mapping_to_K10_reference": {
+    "1": "P1",
+    "2": "P2",
+    "3": "P3",
+    "4": "P4",
+    "5": "P5",
+    "6": "P7",
+    "7": "P9",
+    "8": "P10"
+  },
+  "quality_gate": {
+    "PANGEA_Series_with_q95_accepted_cells": 114,
+    "PANGEA_T_gdT_TRDV1_fraction_accepted_q95": 0.7781731909845789,
+    "PANGEA_T_gdT_TRDV2_fraction_accepted_q95": 0.9659810126582279,
+    "PANGEA_fraction_accepted_q95": 0.8908400569530137,
+    "PANGEA_fraction_strict_q90": 0.7959183673469388,
+    "abstain_above": 0.923892826096261,
+    "accepted_max_Gray_q95": 0.923892826096261,
+    "calibration_population": "donor-held-out Gray cells from five K=8 outer folds",
+    "external_fraction_accepted_q95": 0.5938657130387036,
+    "external_fraction_strict_q90": 0.40524730032241263,
+    "high_confidence_max_Gray_q90": 0.9092598644468171,
+    "metric": "scaled_HVG_relative_error",
+    "primary_external_analysis_gate": "Gray_q95_accepted",
+    "strict_sensitivity_gate": "Gray_q90_strict"
+  },
+  "readiness": {
+    "NC_claim_package_complete": false,
+    "disease_effect_identifiable": false,
+    "external_atlas_transportability_assessed": true,
+    "external_state_response_supported": true,
+    "incremental_value_over_simple_signature_established": false,
+    "orthogonal_functional_validation_completed": true,
+    "orthogonal_functional_validation_is_donor_paired": false,
+    "paired_same_cell_RNA_protein_TCR_validation_completed": true,
+    "prospective_killing_or_degranulation_validation_completed": false,
+    "quality_abstention_defined": true,
+    "scoring_model_frozen": true,
+    "untouched_external_validation_completed": true
+  },
+  "required_inputs": {
+    "gene_identifier": "gene symbol",
+    "matrix_kind": "raw UMI counts",
+    "minimum_frozen_HVG_coverage": 0.8,
+    "normalization": "TPM over frozen training universe"
+  },
+  "schema_version": 2,
+  "status": "research-grade frozen scorer; untouched paired multimodal external validation completed; incremental value established=False; prospective cytotoxicity validation still required",
+  "updated_at": "2026-09-19T13:25:34.663386+00:00",
+  "validation_readout": {
+    "disease_validation": "not established; allergy is confounded with Experiment",
+    "donor_separated_internal_validation": "completed",
+    "external_GSE268991_evidence_tier": "locked untouched final cohort; seven paired colorectal donors with raw-UMI GEX, same-cell CITE-seq ADT and independent gamma-delta TCR",
+    "external_GSE268991_incremental_value": "mean donor ROC-AUC delta cNMF-minus-signature=-0.001638, 95% donor-bootstrap CI=[-0.06214, 0.04694], incremental value established=False",
+    "external_GSE268991_primary_hypotheses": "H1 effect=0.03566, q=0.09375; H2 effect=0.08013, q=0.09375; H3 effect=-0.04068, q=0.2266",
+    "external_GSE268991_reconstruction_scope": "locked all-cell Gray-q95 acceptance=0.509; post-hoc TCR-confirmed unambiguous gamma-delta target-cell acceptance=0.951. The latter diagnoses intended-population transportability but does not replace the locked all-cell result.",
+    "external_PANGEA_evidence_tier": "atlas transportability and expression-derived silver-label association; not untouched or orthogonal functional validation",
+    "external_PANGEA_raw_UMI_projection": "completed for 2107 gamma-delta cells across 120 Series after excluding GSE149356",
+    "external_paired_stimulation_validation": "15 component-contrast tests at within-family BH q<0.05 after Gray-q95 filtering",
+    "external_raw_UMI_projection": "completed for 13 libraries",
+    "functional_rank_signature_baseline": "P2-GzmB rank-signature rho=0.818; incremental cNMF value established=False",
+    "incremental_value_over_rank_signature": "not established; under the same Gray-q95 paired-donor design, cNMF has 15/24 and the rank-signature baseline has 17/24 within-family BH q<0.05 tests",
+    "orthogonal_protein_or_functional_validation": "Gray Data S12 independent-donor flow validation completed across 10 matched tissue x Vd contexts; P2-GzmB rho=0.818, permutation P=0.00645; zero donor overlap, so this is not donor-paired validation"
+  }
+}

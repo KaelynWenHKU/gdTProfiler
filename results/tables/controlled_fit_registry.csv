@@ -1,0 +1,13 @@
+model_id,analysis,C,n_training,n_genes,model_path,threshold
+M01,CONTROLLED,10.0,20254,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M01.joblib,0.09118165675719474
+M02,CONTROLLED,10.0,21908,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M02.joblib,0.9985456591780331
+M03,CONTROLLED,10.0,21908,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M03.joblib,0.9994651614526703
+M04,CONTROLLED,10.0,20254,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M04.joblib,0.5484561247711892
+M05,CONTROLLED,10.0,21908,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M05.joblib,0.9529421705908118
+M06,CONTROLLED,10.0,21908,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M06.joblib,0.9444135097720667
+M07,CONTROLLED,10.0,20254,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M07.joblib,0.14100278352832638
+M08,CONTROLLED,10.0,21908,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M08.joblib,0.9999461285803908
+M09,CONTROLLED,10.0,21908,2000,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M09.joblib,0.9994644474355705
+M10,CONTROLLED,10.0,20254,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M10.joblib,0.65266048055902
+M11,CONTROLLED,10.0,21908,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M11.joblib,0.9931290671158102
+M12,CONTROLLED,10.0,21908,2009,/data/users/kaelynwen/gdT_project/gdt_lr_12model/models/controlled_M12.joblib,0.920116580253343

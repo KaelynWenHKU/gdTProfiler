@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.h5ad
+*.loom
+*.mtx
+*.mtx.gz
+*.fastq*
+*.sra
+data/
+cache/
+logs/
