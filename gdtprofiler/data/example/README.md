@@ -1,0 +1,1 @@
+`spleen_A31.h5ad`: 1,060 spleen T and NK cells from donor A31 of the Cross-tissue Immune Cell Atlas (Domínguez Conde et al., *Science* 376, eabl5197, 2022; CC BY 4.0), restricted to the genes used by gdTProfiler. `receptor_identity` and `receptor_subtype` come from the paired TCR sequencing of the same study.

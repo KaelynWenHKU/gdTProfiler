@@ -1,0 +1,27 @@
+{
+  "upload_type": "software",
+  "title": "gdTProfiler",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Wen, Ka Ning",
+      "affiliation": "The University of Hong Kong"
+    },
+    {
+      "name": "Huang, Yuanhua",
+      "affiliation": "The University of Hong Kong"
+    },
+    {
+      "name": "Park, Sung Hee",
+      "affiliation": "Soongsil University"
+    }
+  ],
+  "description": "gdTProfiler profiles human γδ T cells in single-cell RNA-sequencing data using fixed, pre-trained models; TCR sequencing is not required. It jointly predicts cell identity (αβ T, γδ T or NK cell) with a softmax classifier, scores Vδ1/Vδ2 subtype conditionally within γδ T-cell calls, and projects cells onto eight transcriptional programmes from a fixed consensus NMF reference (K = 8), reporting programme usage together with a reconstruction-quality indicator. This release contains the Python package, the fixed model and reference files, a built-in example dataset, documentation and a tutorial. Programme usage describes transcriptional states; it is not a validated prediction of cytotoxic function or of response to perturbation.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "gamma-delta T cells",
+    "single-cell RNA sequencing",
+    "cell-state profiling",
+    "machine learning"
+  ]
+}
