@@ -2,6 +2,10 @@
 gdTProfiler: multi-level prediction and cell-state profiling of human γδ T cells
 ==========================================================================================
 
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.24486259.svg
+   :target: https://doi.org/10.5281/zenodo.24486259
+   :alt: DOI
+
 About
 =====
 
@@ -99,3 +103,6 @@ References
 Wen, K. N., Huang, Y. & Park, S. H. Multi-level prediction and landscape
 characterization of human γδ T cells across single-cell and spatial
 transcriptomic atlases. *bioRxiv* (2026).
+
+The software version used in the paper (v1.0.0) is archived at Zenodo:
+https://doi.org/10.5281/zenodo.24486259
