@@ -24,9 +24,9 @@ not require T-cell receptor (TCR) sequencing.
   P4, P5, P7, P9, P10) learned from adult human γδ T cells, with a
   reconstruction error that flags cells the reference does not describe well.
 
-.. image:: docs/images/model_architecture.png
+.. image:: docs/images/overview.png
    :width: 900
-   :alt: gdTProfiler identity and subtype model
+   :alt: gdTProfiler model and cell-state reference
 
 The identity head relies on *TRDV* and *TRGC* transcripts. It tolerates loss of
 *TRDC* detection, but it should not be applied to assays that do not measure
