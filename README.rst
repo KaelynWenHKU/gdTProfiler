@@ -14,13 +14,13 @@ their Vδ1/Vδ2 receptor subtype, and describes their transcriptional state with
 fixed reference of eight expression programmes. It works on raw counts and does
 not require T-cell receptor (TCR) sequencing.
 
-* **Identity.** A joint classifier assigns each cell a probability of being an
+* **Identity:** A joint classifier assigns each cell a probability of being an
   αβ T cell, a γδ T cell or an NK cell. It combines a fixed scVI representation of
   2,000 non-TCR genes with nine TCR transcripts (TRAC, TRBC1/2, TRDC, TRGC1/2,
   TRDV1/2/3). It was trained on receptor-supported labels and reached average
   precision ≥ 0.99 in donor-held-out and external testing.
-* **Subtype.** A second head predicts Vδ1 versus Vδ2 from non-TCR expression.
-* **Cell state.** Cells are projected onto eight cNMF programmes (P1, P2, P3,
+* **Subtype:** A second head predicts Vδ1 versus Vδ2 from non-TCR expression.
+* **Cell state:** Cells are projected onto eight cNMF programmes (P1, P2, P3,
   P4, P5, P7, P9, P10) learned from adult human γδ T cells, with a
   reconstruction error that flags cells the reference does not describe well.
 
