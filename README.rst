@@ -118,11 +118,6 @@ Detailed Manual
 * `Documentation <docs/>`_ (installation, input requirements, outputs and API)
 * `Interactive γδ T-cell state atlas <https://kaelynwenhku.github.io/gdTProfiler/atlas/>`_
 
-License
-=======
-
-gdTProfiler is released under the `Apache License 2.0 <LICENSE>`_.
-
 References
 ==========
 
