@@ -10,14 +10,14 @@ About
 =====
 
 gdTProfiler identifies human γδ T cells in single-cell RNA-seq data, predicts
-their Vδ1/Vδ2 receptor subtype, and describes their transcriptional state with a
+their Vδ1/Vδ2 TCR subtype, and describes their transcriptional state with a
 fixed reference of eight expression programmes. It works on raw counts and does
 not require T-cell receptor (TCR) sequencing.
 
 * **Identity:** A joint classifier assigns each cell a probability of being an
   αβ T cell, a γδ T cell or an NK cell. It combines a fixed scVI representation of
   2,000 non-TCR genes with nine TCR transcripts (TRAC, TRBC1/2, TRDC, TRGC1/2,
-  TRDV1/2/3). It was trained on receptor-supported labels and reached average
+  TRDV1/2/3). It was trained on TCR-supported labels and reached average
   precision ≥ 0.99 in donor-held-out and external testing.
 * **Subtype:** A second head predicts Vδ1 versus Vδ2 from non-TCR expression.
 * **Cell state:** Cells are projected onto eight cNMF programmes (P1, P2, P3,
@@ -47,7 +47,7 @@ Quick example
 =============
 
 Using the built-in spleen dataset (1,060 cells from the Cross-tissue Immune Cell
-Atlas, with receptor-defined labels), the following script predicts identity and
+Atlas, with TCR-defined labels), the following script predicts identity and
 subtype, scores the eight programmes and plots the results:
 
 .. code-block:: python
@@ -86,11 +86,37 @@ Column                     Meaning
 
 For your own data, raw counts may sit in a layer: ``gdt.predict(adata, layer="counts")``.
 
+γδ T-cell state atlas
+=====================
+
+The γδ T-cell state atlas described in the paper can be explored interactively at
+https://kaelynwenhku.github.io/gdTProfiler/atlas/
+
+The atlas contains 182,638 records from eight single-cell datasets (Song, SPL,
+Gray, 15-organ, PANGEA, GSE268991, GSE294268 and GSE266862), placed on a common
+UMAP of programme usage (P1–P10) and grouped into ten clusters.
+
+How to use the page:
+
+* **Colour by:** colour records by dataset, donor, tissue, disease, TCR evidence,
+  TCR subtype, cluster, identity and subtype scores, or the usage of each programme.
+* **Dataset:** show a single dataset or all datasets together.
+* **Show only well-reconstructed records:** keep records whose programme
+  reconstruction error is within the 95th percentile of the reference.
+* **Hide records with conflicting TCR evidence:** remove records whose linked TCR
+  sequences conflict.
+* Scroll to zoom, drag to pan, and hover over a point to see its metadata and
+  scores. **Reset view** returns to the full map.
+
+All data are embedded in the page, so it may take a few seconds to load. No data
+are sent to a server.
+
 Detailed Manual
 ===============
 
 * `Tutorial: identifying γδ T cells and scoring their programmes in spleen data <tutorial/gdTProfiler_tutorial.ipynb>`_
 * `Documentation <docs/>`_ (installation, input requirements, outputs and API)
+* `Interactive γδ T-cell state atlas <https://kaelynwenhku.github.io/gdTProfiler/atlas/>`_
 
 License
 =======
